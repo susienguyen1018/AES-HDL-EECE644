@@ -62,7 +62,7 @@ AES-HDL-EECE644/
 ├── aes_final_round.sv   # AES final round (SB → SR → ARK)
 ├── add_round_key.sv     # XOR-based AddRoundKey
 ├── key_expansion.sv     # AES-128 key expansion
-├── aes_pkg.sv           # AES S-box and constants
+├── aes_tables.sv        # AES S-box and constants
 ├── aes128_top.sv        # Top-level wrapper
 │
 ├── sub_bytes.sv         # SubBytes transformation
