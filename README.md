@@ -64,9 +64,18 @@ AES-HDL-EECE644/
 ├── key_expansion.sv     # AES-128 key expansion
 ├── aes_pkg.sv           # AES S-box and constants
 ├── aes128_top.sv        # Top-level wrapper
+│
+├── sub_bytes.sv         # SubBytes transformation
+├── shift_rows.sv        # ShiftRows transformation
+├── mix_columns.sv       # MixColumns transformation
+│
+├── inv_sub_bytes.sv     # Inverse SubBytes (for future decryption support)
+├── inv_shift_rows.sv    # Inverse ShiftRows
+│
 ├── aes_tb.sv            # Testbench with dataset verification
 ├── plaintext_risk.hex   # Plaintext dataset
 ├── ciphertext_ref.hex   # Reference ciphertext dataset
+│
 └── README.md
 ```
 
