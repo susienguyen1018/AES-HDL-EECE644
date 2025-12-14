@@ -6,7 +6,7 @@
 // Project Name: EECE644_Final_Project
 //////////////////////////////////////////////////////////////////////////////////
 
-module aes_tb;
+module aes_tb_NIST_ExampleKey;
 
     logic clk = 0;
     logic reset = 1;
@@ -62,3 +62,4 @@ module aes_tb;
         $finish;
     end
 endmodule
+
