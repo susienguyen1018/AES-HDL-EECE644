@@ -57,24 +57,25 @@ The AES core consists of the following components:
 
 ```
 AES-HDL-EECE644/
-├── aes_core.sv          # AES control FSM and datapath integration
-├── aes_round.sv         # AES standard round (SB → SR → MC → ARK)
-├── aes_final_round.sv   # AES final round (SB → SR → ARK)
-├── add_round_key.sv     # XOR-based AddRoundKey
-├── key_expansion.sv     # AES-128 key expansion
-├── aes_tables.sv        # AES S-box and constants
-├── aes128_top.sv        # Top-level wrapper
+├── aes_core.sv                 # AES control FSM and datapath integration
+├── aes_round.sv                # AES standard round (SB → SR → MC → ARK)
+├── aes_final_round.sv          # AES final round (SB → SR → ARK)
+├── add_round_key.sv            # XOR-based AddRoundKey
+├── key_expansion.sv            # AES-128 key expansion
+├── aes_tables.sv               # AES S-box and constants
+├── aes128_top.sv               # Top-level wrapper
 │
-├── sub_bytes.sv         # SubBytes transformation
-├── shift_rows.sv        # ShiftRows transformation
-├── mix_columns.sv       # MixColumns transformation
+├── sub_bytes.sv                # SubBytes transformation
+├── shift_rows.sv               # ShiftRows transformation
+├── mix_columns.sv              # MixColumns transformation
 │
-├── inv_sub_bytes.sv     # Inverse SubBytes (for future decryption support)
-├── inv_shift_rows.sv    # Inverse ShiftRows
+├── inv_sub_bytes.sv            # Inverse SubBytes (for future decryption support)
+├── inv_shift_rows.sv           # Inverse ShiftRows
 │
-├── aes_tb.sv            # Testbench with dataset verification
-├── plaintext_risk.hex   # Plaintext dataset
-├── ciphertext_ref.hex   # Reference ciphertext dataset
+├── aes_tb.sv                   # Testbench with dataset verification
+├── aes_tb_NIST_ExampleKey.sv   # Testbench using NIST AES-128 example key and test vectors
+├── plaintext_risk.hex          # Plaintext dataset
+├── ciphertext_ref.hex          # Reference ciphertext dataset
 │
 └── README.md
 ```
