@@ -69,8 +69,8 @@ AES-HDL-EECE644/
 ├── shift_rows.sv               # ShiftRows transformation
 ├── mix_columns.sv              # MixColumns transformation
 │
-├── inv_sub_bytes.sv            # Inverse SubBytes (for future decryption support)
-├── inv_shift_rows.sv           # Inverse ShiftRows
+├── inv_sub_bytes.sv            # Inverse SubBytes  (for future decryption support)
+├── inv_shift_rows.sv           # Inverse ShiftRows (for future decryption support)
 │
 ├── aes_tb.sv                   # Testbench with dataset verification
 ├── aes_tb_NIST_ExampleKey.sv   # Testbench using NIST AES-128 example key and test vectors
